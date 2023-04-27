@@ -30,7 +30,8 @@ const App = () => {
   };
 
   const handleAdd = (): void => {
-    console.log("click");
+    setTodo([...todo, { task: input, comment: "", completed: false }]);
+    setInput("");
   };
 
   const handleInput = (value: string): void => {
